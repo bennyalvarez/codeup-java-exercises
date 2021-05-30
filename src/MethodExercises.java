@@ -43,7 +43,7 @@ public class MethodExercises {
         return res;
     }
 
-    //recursion
+    //recursion of multiply
     public static int multiply4( int x, int y){
         if(x == 0)
             return 0;
@@ -79,7 +79,7 @@ public class MethodExercises {
             System.out.printf("%d ", factor);
 
         }
-        return(result);
+        return result;
     }
 
 
