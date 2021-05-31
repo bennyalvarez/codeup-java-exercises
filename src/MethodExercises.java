@@ -50,19 +50,22 @@ public class MethodExercises {
         return multiply(x - 1, y) + y;
     }
 
-    public static int getInteger(int min, int max) {
-    System.out.print("Enter a number between 1 and 10: ");
-    Scanner scanner = new Scanner(System.in);
-    int userInput = 0;
-    do {
-        userInput = scanner.nextInt();
-        if(userInput){
 
-        }
-        System.out.println("great");
-    }
-    while (userInput > max || userInput < min);
-    return userInput;
+    public static int getInteger(int min, int max){
+        Scanner sc = new Scanner(System.in);
+        System.out.printf("Please enter a number between %d and %d%n", min, max);
+        int userInput = 0;
+        do {
+            userInput = sc.nextInt();
+            if (userInput <= max && userInput >= min) {
+                System.out.println("Thank you!");
+
+            } else {
+                System.out.printf("Please enter a number between %d and %d%n", min, max);
+            }
+        }while(userInput > max || userInput < min);
+
+        return userInput;
     }
 
 
@@ -94,6 +97,8 @@ public class MethodExercises {
         System.out.println(multiply1(5,11));
         System.out.println(multiply2(5,11));
         System.out.println(multiply4(5,11));
+
+        getInteger(1, 10);
 
     }
 }
