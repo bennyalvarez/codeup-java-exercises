@@ -7,7 +7,7 @@ public class Person {
 
     public String getName(){ //getter
     //TODO: return the person's name
-        return name;
+        return name;  //we can access the private String name this way as long as it's within the class
     }
 
     public void setName(String name){ //setter
@@ -33,7 +33,14 @@ public class Person {
     //    Create a `main` method on the class that creates a new `Person` object and
     //    tests the above methods.
 
-
-
+    public static void main(String[] args) {
+        Person p1 = new Person("Rudy");
+        //to test methods, do a bunch of souts.
+        System.out.println(p1.getName());
+        p1.setName("Rudolph"); //because it's public void, done this way
+        System.out.println(p1.getName());
+        p1.sayHello();
+    }
+    //If you want to change it later on. Like a user in your app wants to change their username, you’d need a setter.
 
 }

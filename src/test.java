@@ -1,10 +1,12 @@
-
+import org.w3c.dom.ls.LSOutput;
+import util.Input;
 public class test {
 
 
     public static void main(String[] args) {
         Person p1 = new Person("Benny");
         Person p2 = new Person();
+
 
 //        Person person1 = new Person("John");
 //        Person person2 = new Person("John");
@@ -23,6 +25,12 @@ public class test {
         System.out.println(person1.getName());
         System.out.println(person2.getName()); //why is line: 23 and 24 both "Jane."
 
+
+        Input test = new Input();
+
+        System.out.println(test.getString());
+
+        System.out.println(test.YesNo());
 
     }
 
