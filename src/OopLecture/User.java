@@ -31,6 +31,14 @@ public class User {
         this.isLoggedIn = loggedIn;
     }
 
+    public void describeUser(){
+        System.out.println("Username: " + this.username);
+        System.out.println("Password: " + this.password);
+        System.out.println("Email: " + this.email);
+        System.out.println("Logged in? " + this.isLoggedIn);
+
+    }
+
     public User(String username, String password, String email) {
         this.username = username;
         this.password = password;
