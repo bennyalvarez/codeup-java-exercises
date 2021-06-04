@@ -31,7 +31,7 @@ public class Input {
 
 
     public int getInt() {
-        return this.scanner.nextInt()
+        return this.scanner.nextInt();
     }
 
 
