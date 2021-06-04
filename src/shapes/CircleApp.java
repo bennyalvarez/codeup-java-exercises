@@ -15,6 +15,6 @@ public class CircleApp {
 
         System.out.println(c.getArea());
         System.out.println(c.getCircumference());
-
+//defining rectangles that are gonna be made in the future.
     }
 }
