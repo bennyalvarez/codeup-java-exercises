@@ -12,6 +12,7 @@ public class Rectangle {
         this.width = width;
     }
 
+    // Create two methods on the Rectangle class, getArea and getPerimeter that return the respective values. The formulas for both follow:
     public double getArea() {
         return length*width;
     }
@@ -19,5 +20,10 @@ public class Rectangle {
     public double getPerimeter() {
         return 2 * length + 2 * width;
     }
+
+
+
+
+
 
 }
