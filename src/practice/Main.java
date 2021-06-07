@@ -1,8 +1,10 @@
 package practice;
 
 import java.awt.*;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -74,6 +76,48 @@ public class Main {
 
         int results = Math.round(1.1F);
         System.out.println(results);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Age: ");
+        byte age1 = scanner.nextByte();
+        System.out.println("You are " + age1);
+
+        //Mortgage Calculator
+//        System.out.print("Enter Principal Amount : ");
+//        double principal = scanner.nextDouble();
+//        System.out.print("Enter Rate of Interest : ");
+//        double rate = scanner.nextDouble();
+//        rate =( rate/100)/12;
+//        System.out.print("Enter Time period in years : ");
+//        int time = scanner.nextInt();
+//        time = time * 12;
+//        double p= (principal * rate) / (1 - Math.pow(1 + rate, -time));
+//        //
+//        System.out.println("Payment: " + p);
+
+
+
+        //Mortgage Calculator answer...best version
+        final byte MONTHS_IN_YEAR = 12; //making these finals make it easy to read/understand.
+        final byte PERCENT = 100;
+
+        System.out.println("Principal: ");
+        int principal = scanner.nextInt(); //int is good for getting principal up to 2 billion
+
+        System.out.println("Annual Interest Rate: ");
+        float annualInterest = scanner.nextFloat(); //float is enough, don't need double.
+        float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
+
+        System.out.println("Period (Years): ");
+        byte years = scanner.nextByte();
+        int numberOfPayments = years * MONTHS_IN_YEAR;
+
+//        double mortgage = principal
+//                * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
+//                / (Math.pow(1 + monthlyInterest. numberOfPayments) -1);
+//
+//        String mortgageFormatted = NumberFormat.getCurrencyInstance().
+
 
     }
 }
