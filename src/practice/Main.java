@@ -21,14 +21,14 @@ public class Main {
 
         x = 2;
         Point point1 = new Point(1, 1);
-            Point point2 = point1;
-            point1.x = 2; //changing to 2
+        Point point2 = point1;
+        point1.x = 2; //changing to 2
         System.out.println(point2);
 
         String message = "   Hello World" + "!!  ";
         message.endsWith("!!");
         System.out.println(message);
-        System.out.println(message.replace("!","*"));
+        System.out.println(message.replace("!", "*"));
         //Strings are immutable, you cannot change. so This would be a new string. Original is not changed.
         System.out.println(message.trim()); //removes extra white spaces. this message.trim() is a new string
         //same thing message.toLowerCase is a new string.
@@ -40,25 +40,25 @@ public class Main {
 
         //Arrays
 
-        int [] numbers = new int[5]; //specifying the number of elements.
+        int[] numbers = new int[5]; //specifying the number of elements.
         numbers[0] = 1;
         numbers[1] = 2;
 //        numbers[10] =3; //this will cause a crash and an exception.
         //add Array  import on top
         System.out.println(Arrays.toString(numbers));
 
-        int [] numeros = {2, 3, 5, 1, 4};
+        int[] numeros = {2, 3, 5, 1, 4};
         System.out.println(numbers.length);
         Arrays.sort(numeros);
 
         //multidimension arrays to store a matrix
-        int [] [] numbers2 = { {1,2,3}, {4,5,6}};
+        int[][] numbers2 = {{1, 2, 3}, {4, 5, 6}};
 
         System.out.println(Arrays.deepToString(numbers2));
 
         final float pi = 3.14F; //F for float...decimal.
 
-        int result = 10 +3;
+        int result = 10 + 3;
         System.out.println(result);
         int z = 10 + 3 * 2;
         System.out.println(z);
@@ -96,7 +96,6 @@ public class Main {
 //        System.out.println("Payment: " + p);
 
 
-
         //Mortgage Calculator answer...best version
         final byte MONTHS_IN_YEAR = 12; //making these finals make it easy to read/understand.
         final byte PERCENT = 100;
@@ -117,6 +116,36 @@ public class Main {
 //                / (Math.pow(1 + monthlyInterest. numberOfPayments) -1);
 //
 //        String mortgageFormatted = NumberFormat.getCurrencyInstance().
+
+        //comparison operator
+        int temperature = 22;
+        boolean isWarm = temperature > 20 && temperature < 30;
+        System.out.println(isWarm);
+
+        //or operator
+
+        boolean hasHighIncome = true;
+        boolean hasGoodCredit = true;
+        boolean hasCriminalRecord = false;
+        isEligible = (hasHighIncome || hasGoodCredit) && !hasCriminalRecord;
+        System.out.println(isEligible);
+
+
+        int temp = 32;
+        if (temp > 30) {
+            System.out.println("It's a fucking hot day dude!");
+            System.out.println("Drink a lot of water");
+        } else if (temp > 20 && temp <= 30) //braces are only required if more than one statement
+            System.out.println("Beautiful day!");
+
+
+        int income = 120_000;
+        boolean hasHighIncome2 = (income > 100_000); //an elegant way of boolean if statement.
+        System.out.println(hasHighIncome2);
+
+
+
+
 
 
     }
