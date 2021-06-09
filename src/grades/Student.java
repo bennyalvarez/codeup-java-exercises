@@ -37,7 +37,7 @@ public class Student {
             int grade = grades.get(x);              //.get return the element at the specified index
             total += grade;
         }
-        return (total / grades.size());
+        return (total/grades.size());
     }
 
     /* Test your Student class by adding a main method and creating Student objects. Verify that you can
@@ -46,9 +46,11 @@ public class Student {
     public static void main(String[] args) {
         Student student = new Student("Benjamin", new ArrayList<>());
         System.out.println(student.getName());
+
         student.addGrade(90);
         student.addGrade(80);
         student.addGrade(70);
+
         System.out.println(student.grades);
         System.out.println("Grade Average: " + student.getGradeAverage());
     }
