@@ -49,7 +49,7 @@ public class Input {
         }
     }
 
-    //Savanna's version
+    //different version *************************
     public int getInt2(){
         try {
             return Integer.parseInt(getString("Enter a number"));
@@ -68,7 +68,7 @@ public class Input {
         }
     }
 
-
+    //********************************************
 
 
     public double getDouble(){
