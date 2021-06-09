@@ -19,6 +19,7 @@ public class Input {
 
 
 
+
     public boolean YesNo(){
         System.out.println("Yes or No?");
         String input = scanner.nextLine();
@@ -34,7 +35,7 @@ public class Input {
         return this.scanner.nextInt();
     }
 
-
+    //refactor. use String
     public int getInt(int min, int max) {
         System.out.printf("Give me a number between %d and %d", min, max);
         int userNumber = this.scanner.nextInt();
@@ -47,6 +48,28 @@ public class Input {
 
         }
     }
+
+    //Savanna's version
+    public int getInt2(){
+        try {
+            return Integer.parseInt(getString("Enter a number"));
+        } catch (NumberFormatException e) {
+            System.err.println("Invalid input, try again.");
+            return getInt2();
+        }
+    }
+
+    public int getInt2(){
+        try {
+            return Integer.parseInt(getString("Enter a number"));
+        } catch (NumberFormatException e) {
+            System.err.println("Invalid input, try again.");
+            return getInt2();
+        }
+    }
+
+
+
 
     public double getDouble(){
         return this.scanner.nextDouble();
