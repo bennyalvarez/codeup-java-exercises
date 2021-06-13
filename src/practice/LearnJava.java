@@ -44,7 +44,7 @@ public class LearnJava {
 //        } else {
 //            System.out.println("Nice Something new!");
 //        }
-            //switch cases are not often used because of some logical issues but good for readability.
+        //switch cases are not often used because of some logical issues but good for readability.
 //            int day = 2;
 //
 //            switch(day) {
@@ -72,7 +72,7 @@ public class LearnJava {
 //                default:
 //                    System.out.println("Not a valid day!");
 //            }
-                    //do a do while loop when you don't know how many times to run your code.
+        //do a do while loop when you don't know how many times to run your code.
 //                    int a = 7;
 //                    do {
 //                        System.out.println("I luv bacon");
@@ -84,18 +84,77 @@ public class LearnJava {
 //                    System.out.println(count);
 //                    count +=1; //the same as count++
 //                }
-                  //if you know how many times you do need to run code...
+        //if you know how many times you do need to run code...
 //                  String[] cars = {"bmw", "vw", "toyota"};
 //                    //enhanced loop which is a cleaner way.
 //                  for(String c : cars) {
 //                      System.out.println(c);
 //                  }
-                    String s = "Daft Punk";
+//                    String s = "Daft Punk";
+//
+//                    for(int i = 0; i < s.length(); i++) {
+//                        System.out.println(s.charAt(i));
+//                    }
+        //this is break and continue.
+//                    for(int i = 0; i < 5; i++) {
+//                        if(i == 3) {
+//                            continue;
+//                        }
+//                        System.out.println(i);
+//
+//                        }
+        //integer array that's 2 dimensions
+//                    int[][] a = {{3, 5, 1}, //row 0
+//                                {7, 9, 1}}; //row 1, '7' is column 0
+//                    System.out.println(a[1][1]); //output is '9' because row 1, column 1
+//                    char[] characters = {'a', 'b', 'c', 'd'};
+//
+//                    for(int i = 0; i < characters.length; i++) {
+//                        System.out.println(characters[i]);
+//                    }
+        //characters.length doesn't have parenthesis because this is an attribute of an array,
+        // rather than a method. You'll learn more about this in the Object-Oriented Programming section.
 
-                    for(int i = 0; i < s.length(); i++) {
-                        System.out.println(s.charAt(i));
-                    }
+        //nested loops
+//                    for(int i = 0; i < 3; i++) {
+//
+//                        for(int j = 0; j < 5; j++) {
+//                            System.out.println(i + " " + j);
+//                        }
+//                    }
+
+//        int[][] a = {{1,2,3},{4,5,6}};
+//
+//        for(int i = 0; i < a.length; i++) {
+//            for(int j = 0; j < a[i].length; j++) {
+//                System.out.println(a[i][j]);
+//            }
+//            System.out.println();
+//        }
 
 
+//        sayHi();
+//    }
+//        static void sayHi() {
+//            System.out.println("hi!");
+//        int a = add(4, 8);
+//        double a = add(4.1, 8.4);
+//        System.out.println(a);
+//    }
+//        static int add(int a, int b) {
+//            return a + b;
+//        }
+//            //method overloading example makes methods more flexible.
+//        static double add(double a, double b) {
+//            return a + b;
+
+
+
+            }
     }
-}
+
+
+
+
+
+
