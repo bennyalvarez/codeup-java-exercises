@@ -148,10 +148,56 @@ public class LearnJava {
 //        static double add(double a, double b) {
 //            return a + b;
 
+        //Recursion is a method within itself.2 rules:1. it has to call itself inside the method
+        // and 2. it needs to know when to stop aka base case.
+//        sayHi(5);
+//    }
+//        static void sayHi(int n) {
+//        if(n == 0) {
+//            System.out.println("done!");
+//        } else {
+//            System.out.println("hi");
+//            n--;
+//            sayHi(n);
+//        }
+
+//        System.out.println(factorial(4));
+//
+//    }
+//
+//    static int factorial(int n) {
+//        if(n != 0) {
+//            System.out.println("Calling " + n + " * factorial(" + (n - 1) + ")");
+//            return n * factorial(n - 1);
+//        } else {
+//            return 1;
+//        }
+
+    Birds bigBird = new Birds();
+
+        System.out.println("The bird's color is: " + bigBird.color);
+        System.out.println("The bird's size is: " + bigBird.size);
+        bigBird.eat();
+        bigBird.sing();
 
 
-            }
+    Shirt hawaiianShirt = new Shirt();
+
+        System.out.println("The size of the shirt is: " + hawaiianShirt.size);
+        System.out.println("The price of the shirt is: " + hawaiianShirt.price);
+        System.out.println("The color of this shirt is: ");
+
+    Calculator calc = new Calculator(); //this is a new object instantiated from Calculator class.
+        System.out.println(calc.isEven(105));
+
     }
+
+}
+
+
+
+
+
 
 
 
