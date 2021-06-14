@@ -1,6 +1,9 @@
 package practice;
 
 public class LearnJava {
+
+    int a = 5;
+
     public static void main(String[] args) {
         //this is an example of casting. you can go from small to big but to go big to small, you need to add ()
         //to specify the type.
@@ -173,26 +176,39 @@ public class LearnJava {
 //            return 1;
 //        }
 
-    Birds bigBird = new Birds();
+//    Birds bigBird = new Birds();
+//
+//        System.out.println("The bird's color is: " + bigBird.color);
+//        System.out.println("The bird's size is: " + bigBird.size);
+//        bigBird.eat();
+//        bigBird.sing();
+//
+//
+//    Shirt hawaiianShirt = new Shirt();
+//
+//        System.out.println("The size of the shirt is: " + hawaiianShirt.size);
+//        System.out.println("The price of the shirt is: " + hawaiianShirt.price);
+//        System.out.println("The color of this shirt is: ");
+//
+//    Calculator calc = new Calculator(); //this is a new object instantiated from Calculator class.
+//        System.out.println(calc.isEven(105));
 
-        System.out.println("The bird's color is: " + bigBird.color);
-        System.out.println("The bird's size is: " + bigBird.size);
-        bigBird.eat();
-        bigBird.sing();
+//        LearnJava l = new LearnJava();    //method inside main class.
+//        int a = l.subtract(8, 3);
+//        System.out.println(a);
+//
+//    }
+//
+//        public static int subtract(int a, int b) {
+//            return a - b;
 
-
-    Shirt hawaiianShirt = new Shirt();
-
-        System.out.println("The size of the shirt is: " + hawaiianShirt.size);
-        System.out.println("The price of the shirt is: " + hawaiianShirt.price);
-        System.out.println("The color of this shirt is: ");
-
-    Calculator calc = new Calculator(); //this is a new object instantiated from Calculator class.
-        System.out.println(calc.isEven(105));
+            Birds b = new Birds(); //make a new object, special method called "CONSTRUCTOR"
+            b.eat(); //new method
+        }
 
     }
 
-}
+
 
 
 
