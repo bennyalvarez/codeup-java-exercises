@@ -151,7 +151,7 @@ public class LearnJava {
 //        static double add(double a, double b) {
 //            return a + b;
 
-        //Recursion is a method within itself.2 rules:1. it has to call itself inside the method
+        //Recursion is a method called within itself.2 rules:1. it has to call itself inside the method
         // and 2. it needs to know when to stop aka base case.
 //        sayHi(5);
 //    }
