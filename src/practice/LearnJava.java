@@ -206,7 +206,14 @@ public class LearnJava {
 //            b.eat(); //new method
 //        }
 //
+        //This is an new object created from Ukulele Class.
+        Ukulele martin = new Ukulele();
+        System.out.println("The type of wood of this ukulele is " + martin.wood);
+        System.out.println("The price is $" + martin.price + ".00");
 
+        martin.strum();
+        martin.fingerPick();
+        System.out.println("The preferred size of the ukulele is " + martin.size);
 
 
 
