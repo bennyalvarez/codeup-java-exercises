@@ -13,7 +13,7 @@ public class Birds {
 
     static void eat() {  //methods are like functions, what it can do.
         System.out.println("Bird is eating");
-    }
+    }         //this is a method.
 
     static void sing() {
         System.out.println("Bird is singing."); // methods - things it can do.

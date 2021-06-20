@@ -167,7 +167,7 @@ public class LearnJava {
 //        System.out.println(factorial(4));
 //
 //    }
-//
+////
 //    static int factorial(int n) {
 //        if(n != 0) {
 //            System.out.println("Calling " + n + " * factorial(" + (n - 1) + ")");
@@ -202,11 +202,17 @@ public class LearnJava {
 //        public static int subtract(int a, int b) {
 //            return a - b;
 
-            Birds b = new Birds(); //make a new object, special method called "CONSTRUCTOR"
-            b.eat(); //new method
-        }
+//            Birds b = new Birds(); //make a new object, special method called "CONSTRUCTOR"
+//            b.eat(); //new method
+//        }
+//
+
+
+
 
     }
+
+}
 
 
 
