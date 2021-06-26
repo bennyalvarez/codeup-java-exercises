@@ -9,6 +9,11 @@ public class LearnJava {
 
     public static void main(String[] args) {
 
+        //tenary operator
+        int greaterNumber;
+        greaterNumber = (500 > 400) ? 500 : 400;
+        System.out.println(greaterNumber);
+
 //        Birds b = new Birds("small") {
 //
 //        }
@@ -214,7 +219,6 @@ public class LearnJava {
 //    }
 
 
-
 //            Birds b = new Birds(); //make a new object, special method called "CONSTRUCTOR"
 //            b.eat(); //new method
 //        }
@@ -264,7 +268,14 @@ public class LearnJava {
     public void printDetails() {
         System.out.println(name + ", " + age);
     }
-    //test
+
+
+
+
+
+
+
+
 }
 
 
