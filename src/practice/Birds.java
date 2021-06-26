@@ -22,4 +22,7 @@ public class Birds {
     Birds() {  //this code will replace what's in the constructor
         System.out.println("Bird is created");
     }
+
+
+
 }

@@ -2,9 +2,19 @@ package practice;
 
 public class LearnJava {
 
-    int a = 5;
+    static int a = 5;
+
+    String name;
+    int age;
 
     public static void main(String[] args) {
+
+//        Birds b = new Birds("small") {
+//
+//        }
+//
+//        b.eat();
+
         //this is an example of casting. you can go from small to big but to go big to small, you need to add ()
         //to specify the type.
 //        double a = 9.0;
@@ -190,17 +200,20 @@ public class LearnJava {
 //        System.out.println("The price of the shirt is: " + hawaiianShirt.price);
 //        System.out.println("The color of this shirt is: ");
 //
-//    Calculator calc = new Calculator(); //this is a new object instantiated from Calculator class.
+//        Calculator calc = new Calculator(); //this is a new object instantiated from Calculator class.
 //        System.out.println(calc.isEven(105));
-
+//
 //        LearnJava l = new LearnJava();    //method inside main class.
 //        int a = l.subtract(8, 3);
 //        System.out.println(a);
 //
 //    }
 //
-//        public static int subtract(int a, int b) {
-//            return a - b;
+//    public int subtract(int a, int b) {
+//        return a - b;
+//    }
+
+
 
 //            Birds b = new Birds(); //make a new object, special method called "CONSTRUCTOR"
 //            b.eat(); //new method
@@ -213,12 +226,45 @@ public class LearnJava {
 
         martin.strum();
         martin.fingerPick();
-        System.out.println("The preferred size of the ukulele is " + martin.size);
+//        System.out.println("The preferred size of the ukulele is " + martin.size);
+//
+//        Ukulele
 
+        System.out.println(a);
+
+        LearnJava account = new LearnJava();
+
+        account.age = 34;
+        account.setName("Pablo");
+        account.setAge(34);
+        System.out.println(account.getAge());
+        System.out.println(account.getName());
+
+        account.printDetails();
 
 
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void printDetails() {
+        System.out.println(name + ", " + age);
+    }
+    //test
 }
 
 

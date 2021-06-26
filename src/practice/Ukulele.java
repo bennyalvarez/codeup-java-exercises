@@ -2,7 +2,7 @@ package practice;
 
 public class Ukulele {
 
-    String size = "Concert";
+//    String size = "Concert";
     String wood = "Koa Wood";
     int price = 25;
 
@@ -13,5 +13,9 @@ public class Ukulele {
     static void fingerPick() {
         System.out.println("Ukulele is being finger picked.");
     }
+
+//    Ukulele(String newSize) {
+//        size = newSize;
+//    }
 
 }
