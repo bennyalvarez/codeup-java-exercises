@@ -14,6 +14,72 @@ public class LearnJava {
         greaterNumber = (500 > 400) ? 500 : 400;
         System.out.println(greaterNumber);
 
+        int yourFavenumber;
+        yourFavenumber = (21 > 20) ? 21 : 20;
+        System.out.printf("%d \n", yourFavenumber);
+
+        if (5 % 2 == 0) {
+            System.out.println("Number is Even");
+        } else {
+            System.out.println("Number is Odd");
+        }
+
+        int studentPercentage = 76;
+        if (studentPercentage < 35) {
+            System.out.println("Fail");
+        } else if (studentPercentage <= 50) {
+            System.out.println("You need to concentrate more on your studies.");
+        } else if (studentPercentage <= 75) {
+            System.out.println("Good");
+        } else {
+            System.out.println("Excellent!");
+        }
+
+        //Arrays
+
+
+        int[] firstArray = new int[3];
+        firstArray[0] = 1;
+        firstArray[1] = 2;
+        firstArray[2] = 3;
+
+        int[] secondArray = new int[]{10, 20, 30};
+
+        int[] thirdArray = {100, 200, 300};
+//        for(int i=0; i<thirdArray.length; i++){
+//            System.out.println(thirdArray[i]);
+//        }
+        //alt way instead of for loop...easier and cleaner.
+        for(int i: thirdArray){
+            System.out.println(i);
+        }
+
+        //for each or enhanced for loop - use because it's cleaner.
+        int[] number = {0,1,2,3,4,5};
+
+        for(int i:number){
+            System.out.println(i);
+        }
+
+        //while loop. use for if you know number of iterations. if you dont, use while.
+        int i = 5;
+        while(i!=0){
+            System.out.println(i);
+            i--;
+        }
+
+        //do while
+        int userInput = 5;
+        while(userInput != 0){
+            System.out.println("Thank you for watching this video.");
+            userInput--;
+        }
+
+
+
+
+
+
 //        Birds b = new Birds("small") {
 //
 //        }
