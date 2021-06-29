@@ -1,5 +1,7 @@
 package practice;
 
+
+
 public class Worker {    //this is the class
     String workerName;
     int workerID;
@@ -27,11 +29,15 @@ public class Worker {    //this is the class
         numberArr[2][0] = 50;
         numberArr[2][1] = 60;
 
-        for (int i = 0; i < 3; i++) { //outer loop if for rows
-            for (int j = 0; j < 2; j++){ //inner loop is for columns
+        for (int i = 0; i < numberArr.length; i++) { //outer loop if for rows
+            for (int j = 0; j < numberArr[i].length; j++){ //inner loop is for columns
                 System.out.print(numberArr[i][j] + " "); //using sout print so it appears on same line.
             }
             System.out.println(" ");
         }
     }
-}
+
+
+    }
+
+

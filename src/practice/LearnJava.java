@@ -1,5 +1,7 @@
 package practice;
 
+import java.util.*;
+
 public class LearnJava {
 
     static int a = 5;
@@ -7,7 +9,29 @@ public class LearnJava {
     String name;
     int age;
 
+    //sample of method overloading
+    void add(int first, int second){
+        System.out.println("The addition of two numbers is " +(first+second));
+    }
+    void add(double first, double second){
+        System.out.println("The additon of two numbers is " +(first+second));
+    }
+
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String userInput2;
+        userInput2 = in.nextLine();
+        System.out.println(userInput2);
+
+
+
+
+
+        //method overloading add
+        LearnJava addObj = new LearnJava();
+        addObj.add(5,10);
+        addObj.add(5.256, 7);
+
 
         //tenary operator
         int greaterNumber;
@@ -73,6 +97,15 @@ public class LearnJava {
         while(userInput != 0){
             System.out.println("Thank you for watching this video.");
             userInput--;
+        }
+
+        //sample of break and continue used in a for loop
+        for(int g=0; g<10;g++) {
+            if (g == 2) {
+                //break;       //this will stop at 2
+                continue;      //this will continue to 10 but skip 2.
+            }
+            System.out.println(g);
         }
 
 
