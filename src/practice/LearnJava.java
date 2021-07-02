@@ -1,5 +1,7 @@
 package practice;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.*;
 
 public class LearnJava {
@@ -18,7 +20,38 @@ public class LearnJava {
     }
 
     public static void main(String[] args) {
+
+        Birds bigBird = new Birds();
+        System.out.println("Big Bird's color is not " + bigBird.color);
+        System.out.println("Big Bird is not " + bigBird.size + "\n");
+
+        Ukulele lanikai = new Ukulele();
+        System.out.println("The price of a new Lanikai ukulele is " + lanikai.price + "\n");
+
+        Shirt polo = new Shirt();
+        System.out.println("The color of this polo is " + polo.color + "\n");
+
+        MiniBus bennyVan = new MiniBus();
+        System.out.println("The seating capactiy is " + bennyVan.capacity);
+        System.out.println("The color of this van is " + bennyVan.color);
+
+        System.out.println("Wanna hear something cool?");
+        bennyVan.honk();
+        System.out.println("Wanna see something cool?");
+        bennyVan.slideDoor();
+
+
+        System.out.println("The cost of this Mini Bus is $" + bennyVan.cost + ".00.");
+        System.out.println("Can it be upgraded to electric? The answer is " + bennyVan.electricUpgrade);
+
+
+
+
+
+
+
         Scanner in = new Scanner(System.in);
+        System.out.println("Please enter a number here:");
         String userInput2;
         userInput2 = in.nextLine();
         System.out.println(userInput2);
@@ -375,7 +408,10 @@ public class LearnJava {
 
 
 
+
 }
+
+
 
 
 
