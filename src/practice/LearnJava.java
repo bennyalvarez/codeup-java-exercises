@@ -6,24 +6,36 @@ import java.util.*;
 
 public class LearnJava {
 
+
+
     static int a = 5;
 
     String name;
     int age;
 
     //sample of method overloading
-    void add(int first, int second){
-        System.out.println("The addition of two numbers is " +(first+second));
+    void add(int first, int second) {
+        System.out.println("The addition of two numbers is " + (first + second));
     }
-    void add(double first, double second){
-        System.out.println("The additon of two numbers is " +(first+second));
+
+    void add(double first, double second) {
+        System.out.println("The additon of two numbers is " + (first + second));
     }
 
     public static void main(String[] args) {
 
-        Birds bigBird = new Birds();
-        System.out.println("Big Bird's color is not " + bigBird.color);
-        System.out.println("Big Bird is not " + bigBird.size + "\n");
+        Birds robin = new Birds("small");
+
+//        robin.eat();
+        System.out.println(robin.size);
+
+        Calculator calc = new Calculator();
+        System.out.println(calc.isEven(105));
+
+//        Birds bigBird = new Birds();
+//        System.out.println("Big Bird's color is not " + bigBird.color);
+//        System.out.println("Big Bird is not " + bigBird.size + "\n");
+//        bigBird.sing();
 
         Ukulele lanikai = new Ukulele();
         System.out.println("The price of a new Lanikai ukulele is " + lanikai.price + "\n");
@@ -43,7 +55,6 @@ public class LearnJava {
 
         System.out.println("The cost of this Mini Bus is $" + bennyVan.cost + ".00.");
         System.out.println("Can it be upgraded to electric? The answer is " + bennyVan.electricUpgrade);
-
 
 
 
@@ -356,12 +367,12 @@ public class LearnJava {
 //        }
 //
         //This is an new object created from Ukulele Class.
-        Ukulele martin = new Ukulele();
-        System.out.println("The type of wood of this ukulele is " + martin.wood);
-        System.out.println("The price is $" + martin.price + ".00");
-
-        martin.strum();
-        martin.fingerPick();
+//        Ukulele martin = new Ukulele();
+//        System.out.println("The type of wood of this ukulele is " + martin.wood);
+//        System.out.println("The price is $" + martin.price + ".00");
+//
+//        martin.strum();
+//        martin.fingerPick();
 //        System.out.println("The preferred size of the ukulele is " + martin.size);
 //
 //        Ukulele
