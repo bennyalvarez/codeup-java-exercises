@@ -24,10 +24,15 @@ public class LearnJava {
 
     public static void main(String[] args) {
 
-        Birds robin = new Birds("small");
+        Birds eagle = new Birds();
+        eagle.setSize("large");
+        System.out.println("The size of this eagle is " + eagle.getSize());
 
+
+//        Birds robin = new Birds();
+//
 //        robin.eat();
-        System.out.println(robin.size);
+//        System.out.println(robin.size);
 
         Calculator calc = new Calculator();
         System.out.println(calc.isEven(105));
