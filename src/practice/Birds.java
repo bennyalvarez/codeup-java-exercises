@@ -28,10 +28,10 @@ public class Birds {
     private String size;
 
     public String getSize(){
-        return size;
+        return this.size;
     }
 
     public void setSize(String newSize) {
-        size = newSize;
+        this.size = newSize;
     }
 }
