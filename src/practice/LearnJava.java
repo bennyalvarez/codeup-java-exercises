@@ -2,6 +2,11 @@ package practice;
 
 import org.w3c.dom.ls.LSOutput;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.*;
 
 class Vehicle {  //super class
@@ -91,6 +96,74 @@ public class LearnJava {
 //    }
 //
     public static void main(String[] args) {
+
+//        File f = new File("/Users/benjaminalvarez/ourFile.txt");
+
+        try {
+            FileWriter fw = new FileWriter("/Users/benjaminalvarez/Desktop/ourFile.txt");
+//            f.createNewFile();
+            fw.write("this is from alex's course!");
+            fw.close();
+            System.out.println("Successfully wrote!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        ArrayList a = null;
+
+        try {
+            System.out.println(a.isEmpty());
+        } catch(Exception e) {
+            System.out.println(e);
+        }
+
+        Integer.parseInt("3");
+        System.out.println(Integer.parseInt("3")+ Integer.parseInt("2"));
+
+
+        //data structure easier to use than a regular array.
+        ArrayList<Integer> al = new ArrayList();  //we have to say what type it is in < >
+        al.add(3);
+        al.add(7);
+        al.add(94);
+
+        System.out.println(al.contains(7));
+
+        Stack<Integer> s1 = new Stack<Integer>();
+        s1.add(4);
+        s1.add(7);
+        s1.add(1);
+
+        System.out.println(s1);
+
+        System.out.println(s1.pop()); //removes 1
+        System.out.println(s1.pop()); //removes 7
+        System.out.println(s1.pop()); //removes 4
+
+        HashMap<String, Integer> h = new HashMap<String, Integer>();
+        h.put("Alex", 23);
+        h.put("Michael", 22);
+        h.put("Jose", 19);
+
+        System.out.println(h.get("Michael"));
+
+
+        LocalDate l = LocalDate.now();
+        System.out.println(l);
+
+        LocalTime z = LocalTime.now();
+        System.out.println(z);
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your age");
+
+
+        int age = scan.nextInt();
+
+        System.out.println("Enter your ice cream flavor");
+
+        String flavor = scan.next();
+        System.out.println(age + " " + flavor);
 
         Difficulty d = Difficulty.EXTREME;
         System.out.println(d);
