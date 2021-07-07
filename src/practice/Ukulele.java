@@ -5,6 +5,7 @@ public class Ukulele {
     String size = "Concert";
     String wood = "Koa Wood";
     int price = 25;
+    Boolean lowG = true;
 
     static void strum() {
         System.out.println("Ukulele is being strung.");
