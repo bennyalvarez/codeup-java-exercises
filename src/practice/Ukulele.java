@@ -7,6 +7,7 @@ public class Ukulele {
     int price = 25;
     Boolean lowG = true;
     String color = "brown";
+    int numberOfStrings = 4;
 
     static void strum() {
         System.out.println("Ukulele is being strung.");
