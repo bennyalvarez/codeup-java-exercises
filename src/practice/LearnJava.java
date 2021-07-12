@@ -97,6 +97,11 @@ public class LearnJava {
 //
     public static void main(String[] args) {
 
+        Gun glock = new Gun();
+        glock.reload();
+        System.out.println(glock.caliber);
+        System.out.println(glock.caliber = ".45mm");
+
 //        File f = new File("/Users/benjaminalvarez/ourFile.txt");
 
         try {
