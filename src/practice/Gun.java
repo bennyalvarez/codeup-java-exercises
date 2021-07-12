@@ -6,4 +6,12 @@ public class Gun {
     long magazineLoad = 15;
     Boolean automatic = false;
 
+    static void reload() {
+        System.out.println("Gun has been reloaded.");
+    }
+
+    static void shoots() {
+        System.out.println("bang bang!");
+    }
+
 }
