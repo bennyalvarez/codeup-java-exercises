@@ -97,6 +97,13 @@ public class LearnJava {
 //
     public static void main(String[] args) {
 
+        Bear smokey = new Bear();
+        smokey.growl();
+        smokey.eat();
+        smokey.scratch();
+        System.out.println("Smokey's eye color is " + smokey.EYE_COLOR);
+
+
         Gun glock = new Gun();
         glock.reload();
         System.out.println(glock.caliber);
