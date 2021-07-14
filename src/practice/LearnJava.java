@@ -97,6 +97,8 @@ public class LearnJava {
 //
     public static void main(String[] args) {
 
+        NapoleonDynamite nD = new NapoleonDynamite();
+
         Bear smokey = new Bear();
         smokey.growl();
         smokey.eat();
